@@ -49,6 +49,7 @@ const App = () => {
 				<button onClick={onClick}>Valider</button>
 			</div>
 			<pre>{code}</pre>
+			<iframe src='/test.html'></iframe>
 		</>
 	);
 };
