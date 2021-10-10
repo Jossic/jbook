@@ -4,9 +4,9 @@ import * as esbuild from 'esbuild-wasm';
 import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
 
 const App = () => {
+	const ref = useRef<any>();
 	const [input, setInput] = useState('');
 	const [code, setCode] = useState('');
-	const ref = useRef<any>();
 
 	const startService = async () => {
 		ref.current = await esbuild.startService({
