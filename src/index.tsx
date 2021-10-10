@@ -36,6 +36,7 @@ const App = () => {
 				global: 'window',
 			},
 		});
+
 		// console.log('result =>', result);
 
 		setCode(result.outputFiles[0].text);
